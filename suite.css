@@ -1,0 +1,358 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Epilogue";
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    bottom:-12px;
+}
+#white{
+    padding-top:9px;
+    padding-bottom:10px;
+    width:16%;
+    background-color: white;
+    border-color:black;
+    border-radius: 5px;
+}
+#white:hover{
+    background-color: black;
+    color:white;
+    border-color:black;
+}
+.part1{
+    display: flex;
+    margin-bottom: 180px;
+}
+.group1{
+    justify-content: left;
+    z-index:2;
+    position: relative;
+    top:100px;
+    
+}
+.heading1{
+    font-size:63px;
+    width:101%;
+}
+#curve1{
+    width:40%;
+    position: relative;
+    left:47%;
+}
+.text{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:20px;
+    max-width:62%;
+}
+#black{
+    height:40px;
+    width:25%;
+    position:relative;
+    top:10%;
+    color:white;
+    background-color: #172339;
+    border-color: #172339;
+    border-radius:10px;
+    border: none;
+}
+#black:hover{
+    background: linear-gradient(to right, #CB30E3, #FFAF4E);
+}
+#phone{
+    position:relative;
+    right:50%;
+    z-index:1;
+    top:50px;
+}
+.followers{
+    position:relative;
+    left:-4%;
+    top:150px;
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    height: 10%;
+}
+#company{
+    font-size:54px;
+    font-weight: 700;
+}
+.fl{
+    display:flex;
+    flex-direction: column;
+}
+.part2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #172339;
+    border-radius: 10px;
+    height:32rem;
+    position: relative;
+    z-index: 1;
+}
+#human{
+    position:relative;
+    top:-40px;
+}
+#curve2{
+    position:relative;
+    left:3%;
+}
+.group2{
+    max-width: 30%;
+    color:white;
+    position:relative;
+    left:8%;  
+}
+.works{
+    font-size:35px;
+}
+.text2{
+    line-height: 170%; 
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 20rem;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 25rem;
+    background-color: #F3EDE7;
+    margin-top: -16rem;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+@media (min-width:320px) and (max-width:499px) {
+    main{
+        width: 100%;
+        overflow:hidden;
+    }
+    header{
+        width:90%;
+        margin:auto;
+    }
+    #white{
+        width:40%;
+        font-size: 11px;
+        line-height:-20rem;
+    }
+    .part1{
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+        margin:auto;
+    }
+    .heading1{
+        width:103%;
+        position: relative;
+        top:-4rem;
+        font-size: 38px;
+    }
+    #curve1{
+        position:relative;
+        top:-4rem;
+        left:43%;
+    }
+    .text{
+        line-height: 160%;
+        max-width:100% ;
+        position:relative;
+        top:-4rem;
+        font-size: 16px;
+    }
+    #black{
+        width:75%;
+        border-radius: 4px;
+        font-size: 19px;
+        position:relative;
+        top:-1.2rem;
+        height:42px;
+    }
+    #phone{
+        width:90%;
+        margin:auto;
+        position:relative;
+        justify-content: center;
+        left:5%;
+        top:9rem;
+        margin-bottom:40px;
+    }
+    .followers{ 
+        text-align: center;
+        width:40%;
+        margin:auto;
+        margin-bottom:400px;
+    }
+    #company{
+        justify-content: center;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+        height:39rem;   
+    }
+    #human{
+        position:relative;
+        top:-40%;
+    }
+    #curve2{
+        position:relative;
+        top:-140px;
+        left: -4%;
+    }
+    .group2{
+        max-width:80%;
+        text-align: center;
+        position:relative;
+        left:-1%;
+        top:-15%;
+    }
+    .foot{
+        height:10rem;
+        display:flex;
+        flex-direction:column;
+        position:relative;
+        left:5%;
+        width: 44%;
+    }
+    footer{
+        height:32rem;
+    }
+    #suite{
+        width:70px;
+        position:relative;
+        left:26%;
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+} 
+@media (min-width:320px) and (max-width:360px){
+    .heading1{
+        font-size:30px;
+    }
+    #curve1{
+        position:relative;
+        left:49%;
+    }
+    #phone{
+        width:100%;
+        margin:auto;
+        position:relative;
+        left: -4%;
+     }
+}
+@media (min-width:360px) and (max-width:390px){
+    .heading1{
+        font-size:34px;
+    }
+}
+@media (min-width:500px) and (max-width:599px){
+    #human{
+        margin-bottom:15%;
+    }
+}
+/* @media (min-width:500px) and (max-width:740px){
+    footer{
+        width:150%;
+    }
+}  */
+@media (min-width:500px) and (max-width:1024px){
+    main{
+      width:92%;
+      margin: auto; 
+    }
+    #white{
+        width:30%;
+        padding:15px;
+    }
+    .part1{
+        display: flex;
+        flex-direction:column;
+    }
+    .heading1{
+        font-size: 57px;
+    }
+    #curve1{
+        position:relative;
+        left:31%;
+        width:33%;
+    }
+    .text{
+        line-height:150%;
+        margin-bottom: 4%;
+        width:52%;
+    }
+    #black{
+        height:50px;
+        width:45%;
+        font-size: 22px;        
+    }
+    #phone{
+        position: relative;
+        right:-53%;
+        top:-20rem;
+    }
+    .followers{
+        text-align: center;
+        display:flex;
+        width:80%;
+        margin:auto;
+        justify-content:space-between;
+        flex-direction:row;
+        top:-12rem;
+    }
+    #company{
+        width:75%;
+        margin:auto;
+    }
+    .part2{
+        flex-direction: column;
+        height:45rem;
+    }
+    #human{
+        position:relative;
+        top:-30%;         
+    }
+    #curve2{
+        position:relative;
+        top:-22%;
+        left:-2%;
+    }
+    .group2{
+        position:relative;
+        top:-18%;
+        text-align: center;
+        left:-1%;
+        max-width:86%; 
+    }
+    .text2{
+        text-align: center;
+    }
+    .social{
+        width:24%;
+    }
+} 
